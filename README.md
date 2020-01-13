@@ -7,4 +7,37 @@ These are my common config files that I often will need when setting up a new Ub
 - `.gitconfig`: Configuration file for `git`
 - `.gitignore`: Common Git Ignore for Python projects
 - `.profile`: Configuration file for BASH terminal
+- `config_0`: Configuration file for `tilda` terminal
 - `config.yml`: Configuration file for `fusuma` multi-touch gestures
+
+## Applications to Install:
+- **General Updates**:
+  - `sudo apt update`
+  - `sudo apt upgrade`
+  - `sudo apt autoremove`
+- **`pip3`**: 
+  - `sudo apt install python-pip3`
+  - `sudo apt update`
+- **`fusuma`**: 
+  - Follow instruction in the [GitHub repo](https://github.com/iberianpig/fusuma)
+  - Add to startup applications
+  - Add `config.yml` to `~/.config/fusuma`
+- **`pipenv`**:
+  - `pip3 install --user pipenv` 
+  - [Documentation](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
+- **`tilda`**:
+  - `apt install tilda`
+  - Add to startup applications
+  - Add `config_0` to `~/.config/tilda`
+  - [GitHub repo](https://github.com/lanoxx/tilda)
+- **VS Code**:
+  - Extensions:
+    - autoDocstring - Docstrings for Python
+    - Material Theme
+    - Material Icon Theme
+    - Edit csv
+    - Live Share
+    - Python
+    - TODO Highlight
+    - Docker
+    - Django
