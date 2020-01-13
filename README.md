@@ -22,6 +22,10 @@ These are my common config files that I often will need when setting up a new Ub
   - Follow instruction in the [GitHub repo](https://github.com/iberianpig/fusuma)
   - Add to startup applications
   - Add `config.yml` to `~/.config/fusuma`
+- **Workspace Matrix**:
+  - Use Ubuntu Software to install 
+  - Set up a horizontal arrangement of workspaces (3 col by 1 row)
+  - Change Ubuntu keyboard shortcuts so CTRL + ALT + (LEFT or RIGHT) moves up or down a workspace rather than left or right.
 - **`pipenv`**:
   - `pip3 install --user pipenv` 
   - [Documentation](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
