@@ -50,8 +50,6 @@ function parse_git_dirty {
 # PS1 is what actually defines what your command line prompt looks like.
 export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 
-alias docker='sudo docker'
-alias docker-compose='sudo docker-compose'
 alias open='xdg-open'
 alias dj-man='python manage.py'
 alias clean='cd && clear'
