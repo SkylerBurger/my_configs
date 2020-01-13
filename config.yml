@@ -1,0 +1,38 @@
+# Fusuma Config File
+# Loacted: ~/.config/fusuma/config.yml
+# GitHub: https://github.com/iberianpig/fusuma
+swipe:
+  3:
+    left:
+      command: 'xdotool key alt+Left'
+    right:
+      command: 'xdotool key alt+Right'
+    up:
+      command:
+    down:
+      command:
+  4:
+    up:
+      command: 'xdotool key super'
+    down:
+      command: 'xdotool key super+a'
+    left:
+      command: 'xdotool key Ctrl+Alt+Right'
+    right:
+      command: 'xdotool key Ctrl+Alt+Left'
+    
+pinch:
+  in:
+    command: 'xdotool key Ctrl+plus'
+    threshold: 0.5
+  out:
+     command: 'xdotool key Ctrl+minus'
+     threshold: 0.5
+
+threshold:
+  swipe: .5
+  pinch: 1
+
+interval:
+  swipe: .5
+  pinch: 1

@@ -1,0 +1,8 @@
+# Place this in ~/
+[user]
+	name = Skyler Burger
+	email = skylerburger@gmail.com
+[core]
+	editor = code --wait
+[credential]
+	helper = cache --timeout=10800
