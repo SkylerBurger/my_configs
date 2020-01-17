@@ -9,6 +9,7 @@ These are my common config files that I often will need when setting up a new Ub
 - `.profile`: Configuration file for BASH terminal
 - `config_0`: Configuration file for `tilda` terminal
 - `config.yml`: Configuration file for `fusuma` multi-touch gestures
+- `django-html.json`: My user-created snippets for VS Code's Django extension
 
 ## Applications to Install:
 - **General Updates**:
@@ -45,3 +46,4 @@ These are my common config files that I often will need when setting up a new Ub
     - TODO Highlight
     - Docker
     - Django
+  - Place `django-html.json` into `./config/Code/User/snippets`
