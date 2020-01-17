@@ -47,3 +47,9 @@ These are my common config files that I often will need when setting up a new Ub
     - Docker
     - Django
   - Place `django-html.json` into `./config/Code/User/snippets`
+- **General Applications**:
+  - Chrome
+  - Slack
+  - Spotify
+- **Font Packs**:
+  - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
