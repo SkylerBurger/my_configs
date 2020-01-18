@@ -16,6 +16,13 @@ These are my common config files that I often will need when setting up a new Ub
   - `sudo apt update`
   - `sudo apt upgrade`
   - `sudo apt autoremove`
+- **General Settings**:
+  - Dock > Auto-hide the Dock <-- Toggle ON
+  - Dock > Icon size <-- Set to 30px
+- **General Applications**:
+  - Chrome
+  - Slack
+  - Spotify
 - **`pip3`**: 
   - `sudo apt install python3-pip`
   - `sudo apt update`
@@ -25,6 +32,13 @@ These are my common config files that I often will need when setting up a new Ub
 - **`git`**:
   - `sudo apt install git`
   - Add `.gitconfig` to `~/`
+- **GNOME Tweaks**:
+  - Use Ubuntu Software to install
+  - Extensions > Desktop Icons > Settings Gear <-- Turn OFF personal folder AND trash icon toggles
+  - Appearance > Applications <-- Yaru-Dark
+  - Top Bar > Activities Overview Hot Corner <-- Toggle ON
+  - Top Bar > Battery Percentage <-- Toggle ON
+  - Windows > Center New Windows <-- Toggle ON
 - **`tilda`**:
   - `sudo apt install tilda`
   - Start `tilda` once before proceeding
@@ -33,8 +47,9 @@ These are my common config files that I often will need when setting up a new Ub
   - [GitHub repo](https://github.com/lanoxx/tilda)
 - **`fusuma`**: 
   - Follow instruction in the [GitHub repo](https://github.com/iberianpig/fusuma)
-  - Add to startup applications
+  - Create`fusuma` directory in `~/.config`
   - Add `config.yml` to `~/.config/fusuma`
+  - Add to startup applications
 - **Workspace Matrix**:
   - Use Ubuntu Software to install 
   - Set up a horizontal arrangement of workspaces (3 col by 1 row)
@@ -51,9 +66,5 @@ These are my common config files that I often will need when setting up a new Ub
     - Docker
     - Django
   - Place `django-html.json` into `./config/Code/User/snippets`
-- **General Applications**:
-  - Chrome
-  - Slack
-  - Spotify
 - **Font Packs**:
   - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
