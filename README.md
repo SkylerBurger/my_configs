@@ -17,8 +17,20 @@ These are my common config files that I often will need when setting up a new Ub
   - `sudo apt upgrade`
   - `sudo apt autoremove`
 - **`pip3`**: 
-  - `sudo apt install python-pip3`
+  - `sudo apt install python3-pip`
   - `sudo apt update`
+- **`pipenv`**:
+  - `pip3 install --user pipenv` 
+  - [Documentation](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
+- **`git`**:
+  - `sudo apt install git`
+  - Add `.gitconfig` to `~/`
+- **`tilda`**:
+  - `sudo apt install tilda`
+  - Start `tilda` once before proceeding
+  - Replace `config_0` at `~/.config/tilda` with the copy from this repo
+  - Add to startup applications
+  - [GitHub repo](https://github.com/lanoxx/tilda)
 - **`fusuma`**: 
   - Follow instruction in the [GitHub repo](https://github.com/iberianpig/fusuma)
   - Add to startup applications
@@ -27,14 +39,6 @@ These are my common config files that I often will need when setting up a new Ub
   - Use Ubuntu Software to install 
   - Set up a horizontal arrangement of workspaces (3 col by 1 row)
   - Change Ubuntu keyboard shortcuts so CTRL + ALT + (LEFT or RIGHT) moves up or down a workspace rather than left or right.
-- **`pipenv`**:
-  - `pip3 install --user pipenv` 
-  - [Documentation](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
-- **`tilda`**:
-  - `apt install tilda`
-  - Add to startup applications
-  - Add `config_0` to `~/.config/tilda`
-  - [GitHub repo](https://github.com/lanoxx/tilda)
 - **VS Code**:
   - Extensions:
     - autoDocstring - Docstrings for Python
