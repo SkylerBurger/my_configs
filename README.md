@@ -19,6 +19,7 @@ These are my common config files that I often will need when setting up a new Ub
 - **General Settings**:
   - Dock > Auto-hide the Dock <-- Toggle ON
   - Dock > Icon size <-- Set to 30px
+  - Power > Automatic Brightness <-- Toggle OFF
 - **General Applications**:
   - Chrome
   - Slack
