@@ -76,15 +76,42 @@
 		],
 		"description": "Generate a <head> tag"
 	},
+	"Unordered List tag": {
+		"prefix": "ul",
+		"body": [
+			"<ul>",
+			"    $0",
+			"</ul>"
+		],
+		"description": "Generate a <ul> tag"
+	},
+	"List Tag": {
+		"prefix": "li",
+		"body": [
+			"<li>$0</li>",
+		],
+		"description": "Generate a <li> tag"
+	},
+	"For Loop": {
+		"prefix": "for",
+		"body": [
+			"{% for $1 in $2 %}",
+			"$0",
+			"{% endfor %}",
+		],
+		"description": "Generate a for-loop tag"
+	},
 	"HTML Template": {
 		"prefix": "html",
 		"body": [
 			"<html>",
 			"    <head>",
-			"        <title>$1</title>",
+			"        <title>{% block title %}{% endblock title %}</title>",
+			"        {% block head_links %}{% endblock head_links %}",
 			"    </head>",
 			"    <body>",
 			"        $0",
+			"        {% block content %}{% endblock content %}",
 			"    </body>",
 			"</html>"
 		],
