@@ -51,6 +51,7 @@ function parse_git_dirty {
 export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 
 alias clean='cd && clear'
+alias chrome='google-chrome'
 alias djm='python manage.py'
 alias dja='django-admin'
 alias docker='sudo docker'
