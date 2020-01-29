@@ -33,6 +33,9 @@ These are my common config files that I often will need when setting up a new Ub
 - **`git`**:
   - `sudo apt install git`
   - Add `.gitconfig` to `~/`
+- **`nodejs` & `npm`**:
+  - `sudo apt install nodejs`
+  - `sudo apt install npm`
 - **GNOME Tweaks**:
   - Use Ubuntu Software to install
   - Extensions > Desktop Icons > Settings Gear <-- Turn OFF personal folder AND trash icon toggles
