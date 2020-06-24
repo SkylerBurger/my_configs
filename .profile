@@ -19,3 +19,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export PATH="$PATH:/home/skybur/.local/bin"
+
+# Required for Poetry (Python Project Dependency Mgmt)
+export PATH="$HOME/.poetry/bin:$PATH"

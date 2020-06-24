@@ -47,6 +47,15 @@ function parse_git_dirty {
 	fi
 }
 
+# Function to determine if Poetry's shell is active
+# function poetry_shell_status {
+# 	if [ -n "$POETRY_ACTIVE" ]; then
+# 		echo '** Poetry Shell: ACTIVE **'
+# 	else
+# 		echo '** Poetry Shell: NOT Active **'
+# 	fi
+# }
+
 # PS1 is what actually defines what your command line prompt looks like.
 export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 
@@ -60,3 +69,10 @@ alias docker-compose='sudo docker-compose'
 alias open='xdg-open'
 alias vs='code . && clear'
 alias chrome='google-chrome'
+# alias poe='poetry_shell_status'
+alias poet='python3 ~/Coding/Projects/poet/poet.py'
+
+# PyEnv Requirement
+export PATH="/home/skybur/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
