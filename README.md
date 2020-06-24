@@ -74,6 +74,7 @@ These are my common config files that I often will need when setting up a new Ub
     - Material Icon Theme - Philipp Kief
     - Python - Microsoft
     - Python Docstring Generator - Nils Werner
+    - Remote Development - Microsoft
     - TODO Highlight - Wayou Liu
     - Visual Studio Intellicode - Microsoft
   - Font Packs:
