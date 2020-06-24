@@ -3,6 +3,7 @@
 These are my common config files that I often will need when setting up a new Ubuntu environment. Some common project resources may end up here as well.
 
 ## Contents
+
 - `.bashrc`: Configuration file for BASH terminal
 - `.gitconfig`: Configuration file for `git`
 - `.gitignore`: Common Git Ignore for Python projects
@@ -10,15 +11,18 @@ These are my common config files that I often will need when setting up a new Ub
 - `config_0`: Configuration file for `tilda` terminal
 - `config.yml`: Configuration file for `fusuma` multi-touch gestures
 - `django-html.json`: My user-created snippets for VS Code's Django extension
-
+- `JetBrainsMono-1.0.3.zip`: Zip file containing the JetBrains Mono font
 ## Applications to Install:
+
 - **General Updates**:
   - `sudo apt update`
   - `sudo apt upgrade`
   - `sudo apt autoremove`
-- **General Settings**:
-  - Dock > Auto-hide the Dock <-- Toggle ON
-  - Dock > Icon size <-- Set to 30px
+- **Ubuntu Settings App**:
+  - Appearance > Window Colors <-- Set to Dark
+  - Appearance > Dock > Auto-hide the Dock <-- Toggle ON
+  - Appearance > Dock > Icon size <-- Set to 30px
+  - Appearance > Dock > Position on Screen <-- Set to Bottom
   - Power > Automatic Brightness <-- Toggle OFF
 - **General Applications**:
   - Chrome
@@ -27,19 +31,17 @@ These are my common config files that I often will need when setting up a new Ub
 - **`pip3`**: 
   - `sudo apt install python3-pip`
   - `sudo apt update`
-- **`pipenv`**:
-  - `pip3 install --user pipenv` 
-  - [Documentation](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
 - **`git`**:
   - `sudo apt install git`
   - Add `.gitconfig` to `~/`
+- **PVP Workflow**
+  - Follow the steps in your [guide](https://dev.to/skybur/pvp-a-workflow-for-python-projects-29h3) to get Pyenv, Virtualenv, and Poetry running
 - **`nodejs` & `npm`**:
   - `sudo apt install nodejs`
   - `sudo apt install npm`
 - **GNOME Tweaks**:
   - Use Ubuntu Software to install
   - Extensions > Desktop Icons > Settings Gear <-- Turn OFF personal folder AND trash icon toggles
-  - Appearance > Applications <-- Yaru-Dark
   - Top Bar > Activities Overview Hot Corner <-- Toggle ON
   - Top Bar > Battery Percentage <-- Toggle ON
   - Windows > Center New Windows <-- Toggle ON
@@ -55,20 +57,28 @@ These are my common config files that I often will need when setting up a new Ub
   - Add `config.yml` to `~/.config/fusuma`
   - Add to startup applications
 - **Workspace Matrix**:
-  - Use Ubuntu Software to install 
-  - Set up a horizontal arrangement of workspaces (3 col by 1 row)
-  - Change Ubuntu keyboard shortcuts so CTRL + ALT + (LEFT or RIGHT) moves up or down a workspace rather than left or right.
+  - [GitHub Repo](https://github.com/mzur/gnome-shell-wsmatrix) 
+  - In Tweaks:
+    - Workspaces > Dynamic Workspaces <-- Toggle ON
+    - Workspaces > Display Handling > Workspaces Span Displays <-- Toggle On
+  - In Ubuntu settings, change keyboard shortcuts so CTRL + ALT + (LEFT or RIGHT) moves up or down a workspace rather than left or right.
 - **VS Code**:
   - Extensions:
-    - autoDocstring - Docstrings for Python
-    - Material Theme
-    - Material Icon Theme
-    - Edit csv
-    - Live Share
-    - Python
-    - TODO Highlight
-    - Docker
-    - Django
-  - Place `django-html.json` into `./config/Code/User/snippets`
-- **Font Packs**:
-  - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+    - Community Material Theme - Mattia Astorino
+    - Docker - Microsoft
+    - Django - Baptiste Darthenay
+      - Place `django-html.json` into `./config/Code/User/snippets`
+    - ESLint - Dirk Baeumer
+    - Live Server - Ritick Dey
+    - Live Share Extension Pack - Microsoft
+    - Material Icon Theme - Philipp Kief
+    - Python - Microsoft
+    - Python Docstring Generator - Nils Werner
+    - TODO Highlight - Wayou Liu
+    - Visual Studio Intellicode - Microsoft
+  - Font Packs:
+    - [JetBrains Mono](https://www.jetbrains.com/lp/mono/) (zip included here in repo)
+      - Unzip/Extract zip file to `~./local/share/fonts`
+      - `fc-cache -f -v`
+      - Restart VS Code
+      - Preferences > Text Editor > Font <-- Add 'JetBrains Mono' to the front of the list
