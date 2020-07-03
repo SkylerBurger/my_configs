@@ -69,8 +69,13 @@ alias docker-compose='sudo docker-compose'
 alias open='xdg-open'
 alias vs='code . && clear'
 alias chrome='google-chrome'
+
+# My Python development PVP workflow aliases
 # alias poe='poetry_shell_status'
 alias poet='python3 ~/Coding/Projects/poet/poet.py'
+
+# For Ubuntu 20.04 (no 'python' command)
+alias python='python3'
 
 # PyEnv Requirement
 export PATH="/home/skybur/.pyenv/bin:$PATH"
