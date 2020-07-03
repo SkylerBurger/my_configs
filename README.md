@@ -25,9 +25,11 @@ These are my common config files that I often will need when setting up a new Ub
   - Appearance > Dock > Position on Screen <-- Set to Bottom
   - Power > Automatic Brightness <-- Toggle OFF
 - **General Applications**:
-  - Chrome
   - Slack
   - Spotify
+- **Chrome**:
+  - `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
+  - `sudo apt install ./google-chrome-stable_current_amd64.deb`
 - **`pip3`**: 
   - `sudo apt install python3-pip`
   - `sudo apt update`
@@ -37,8 +39,10 @@ These are my common config files that I often will need when setting up a new Ub
 - **PVP Workflow**
   - Follow the steps in your [guide](https://dev.to/skybur/pvp-a-workflow-for-python-projects-29h3) to get Pyenv, Virtualenv, and Poetry running
 - **`nodejs` & `npm`**:
+  - [Guide](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-20-04/)
+  - `url -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
   - `sudo apt install nodejs`
-  - `sudo apt install npm`
+  - Check --> `node --version` and `npm --version`
 - **GNOME Tweaks**:
   - Use Ubuntu Software to install
   - Extensions > Desktop Icons > Settings Gear <-- Turn OFF personal folder AND trash icon toggles
@@ -83,3 +87,17 @@ These are my common config files that I often will need when setting up a new Ub
       - `fc-cache -f -v`
       - Restart VS Code
       - Preferences > Text Editor > Font <-- Add 'JetBrains Mono' to the front of the list
+- **Docker**:
+  - [Guide](https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-20-04-f1b99845959e)
+  - `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+  - `sudo bash -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu eoan stable" > /etc/apt/sources.list.d/docker-ce.list'`
+  - `sudo apt update`
+  - `apt-cache policy docker-ce`
+  - `sudo apt install docker-ce`
+  - Check --> `sudo systemctl status docker`
+- **Docker-Compose**:
+  - [Guide](https://docs.docker.com/compose/install/)
+  - `sudo curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+  - `sudo chmod +x /usr/local/bin/docker-compose`
+  - Check --> `docker-compose --version`
+
