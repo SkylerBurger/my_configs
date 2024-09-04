@@ -43,6 +43,10 @@ These are my common config files that I often will need when setting up a new Ub
   - `curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
   - `sudo apt install nodejs`
   - Check --> `node --version` and `npm --version`
+- **GNOME Extensions**
+  - The [GNOME Extensions](https://extensions.gnome.org/) site has a Chrome extension that allows you to easily browse their catalog then install extensions directly from the site.
+  - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) is a MacOS-like dock
+  - [No Overview at Startup](https://extensions.gnome.org/extension/4099/no-overview/) removes the annoying overview at startup
 - **GNOME Tweaks**:
   - Use Ubuntu Software to install
   - Extensions > Desktop Icons > Settings Gear <-- Turn OFF personal folder AND trash icon toggles
@@ -57,6 +61,8 @@ These are my common config files that I often will need when setting up a new Ub
   - [GitHub repo](https://github.com/lanoxx/tilda)
 - **`fusuma`**: 
   - Follow instruction in the [GitHub repo](https://github.com/iberianpig/fusuma)
+  - Unless things have changed you will have to disable Wayland
+    - `sudo nano /etc/gdm3/custom.conf` then uncomment or set `WaylandEnable=false`
   - Create`fusuma` directory in `~/.config`
   - Add `config.yml` to `~/.config/fusuma`
   - Add to startup applications
